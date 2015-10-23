@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <com.example.macremote.demo_weixin.CustomView.ChangeColorIconWithTextView
+            android:id="@+id/id_one"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            custom:color_unchecked_custom="@color/black"
+            custom:color_custom="@color/red"
+            custom:icon_custom="@mipmap/ic_menu_start_conversation"
+            custom:text_custom="@string/tab_weixin"
+            custom:text_size_custom="12sp"/>
+        <com.example.macremote.demo_weixin.CustomView.ChangeColorIconWithTextView
+            android:id="@+id/id_two"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            custom:color_unchecked_custom="@color/black"
+            custom:color_custom="@color/green"
+            custom:icon_custom="@mipmap/ic_menu_friendslist"
+            custom:text_custom="@string/tab_contact"
+            custom:text_size_custom="12sp" />
+
+        <com.example.macremote.demo_weixin.CustomView.ChangeColorIconWithTextView
+            android:id="@+id/id_three"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            custom:color_unchecked_custom="@color/black"
+            custom:color_custom="@color/purple"
+            custom:icon_custom="@mipmap/ic_menu_emoticons"
+            custom:text_custom="@string/tab_find"
+            custom:text_size_custom="12sp" />
+
+        <com.example.macremote.demo_weixin.CustomView.ChangeColorIconWithTextView
+            android:id="@+id/id_four"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            custom:color_unchecked_custom="@color/black"
+            custom:color_custom="@color/blue"
+            custom:icon_custom="@mipmap/ic_menu_allfriends"
+            custom:text_custom="@string/tab_me"
+            custom:text_size_custom="12sp" />
+    </LinearLayout>
+</LinearLayout>

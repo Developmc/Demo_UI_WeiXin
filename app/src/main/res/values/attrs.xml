@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="icon_custom" format="reference"/>
+    <attr name="color_custom" format="color"/>
+    <attr name="color_unchecked_custom" format="color"/>
+    <attr name="text_custom" format="string"/>
+    <attr name="text_size_custom" format="dimension"/>
+
+    <declare-styleable name="ChangeColorIconView">
+        <attr name="icon_custom"/>
+        <attr name="color_custom"/>
+        <attr name="color_unchecked_custom"/>
+        <attr name="text_custom"/>
+        <attr name="text_size_custom"/>
+    </declare-styleable>
+</resources>
